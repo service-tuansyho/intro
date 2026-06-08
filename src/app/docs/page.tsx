@@ -78,7 +78,7 @@ export default function DocsPage() {
         <section className="mb-8">
           <h2 className="text-2xl font-semibold mb-2">FAQ</h2>
           <div className="text-slate-300">
-            <p className="mb-2"><strong>Q:</strong> I don't see a Connect Wallet button?</p>
+            <p className="mb-2"><strong>Q:</strong> I don&apos;t see a Connect Wallet button?</p>
             <p className="mb-4">A: Make sure your wallet extension is installed and the page has permission. Try reloading the page.</p>
 
             <p className="mb-2"><strong>Q:</strong> My transaction failed?</p>
@@ -87,7 +87,7 @@ export default function DocsPage() {
         </section>
 
         <div className="mt-8 text-slate-400 text-sm">
-          <p>If you'd like, I can:</p>
+          <p>If you&apos;d like, I can:</p>
           <ul className="list-disc ml-6">
             <li>Add step-by-step screenshots for each flow.</li>
             <li>Create deeper tutorials for minting or listing workflows.</li>
