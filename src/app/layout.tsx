@@ -14,6 +14,33 @@ export const metadata: Metadata = {
   publisher: 'Sui NFT Marketplace',
   viewport: 'width=device-width, initial-scale=1',
   robots: 'index, follow',
+  openGraph: {
+    type: 'website',
+    locale: 'en_US',
+    url: 'https://carnobon.com',
+    title: 'Sui NFT Marketplace | Buy, Sell & Mint NFTs on Sui Blockchain',
+    description: 'Discover, collect, and trade unique NFTs on the Sui blockchain. Browse collections, mint new NFTs, and connect your Sui wallet.',
+    siteName: 'Carnobon',
+    images: [
+      {
+        url: 'https://carnobon.com/carnobon-logo.svg',
+        width: 512,
+        height: 512,
+        alt: 'Carnobon Logo',
+        type: 'image/svg+xml',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Sui NFT Marketplace | Carnobon',
+    description: 'Buy, sell, and mint unique NFTs on the Sui blockchain.',
+    images: ['https://carnobon.com/carnobon-logo.svg'],
+    creator: '@carnobon',
+  },
+  alternates: {
+    canonical: 'https://carnobon.com',
+  },
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -22,6 +49,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head>
         <meta charSet="utf-8" />
         <meta name="theme-color" content="#0f172a" />
+        <link rel="icon" href="/carnobon-logo.svg" type="image/svg+xml" />
       </head>
       <body className="bg-slate-900">
         <Navbar />

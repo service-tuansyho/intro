@@ -1,7 +1,7 @@
 'use client'
 import Link from 'next/link'
 import { useState } from 'react'
-import Image from 'next/image'
+import AnimatedLogo from './AnimatedLogo'
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false)
@@ -12,7 +12,7 @@ export default function Navbar() {
                 <div className="flex items-center justify-between">
                     <div className="flex items-center gap-2">
                         <Link href="/" className="text-xl font-bold text-white hover:text-blue-400 transition">
-                            <Image src="/logo.png" alt="Sui NFT Marketplace Logo" width={64} height={64} className="inline-block mr-2" />
+                            <AnimatedLogo className="w-16 h-16" />
                         </Link>
                     </div>
                     <div className="hidden md:flex items-center gap-8">
